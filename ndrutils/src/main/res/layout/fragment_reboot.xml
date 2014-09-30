@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.camber.ndrutils.NdrApp$RebootFragment">
+
+    <LinearLayout
+        android:id="@+id/recoverySelection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recovery_intro" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:drawable/divider_horizontal_dim_dark"
+            android:dividerPadding="2dp"
+            android:showDividers="middle">
+
+            <RadioButton
+                android:id="@+id/radioButtonPhilz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recovery_philz" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTwrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recovery_twrp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCwm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recovery_cwm" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recoveryMissing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recovery_intro" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pwr_message_failed_read_prop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pwr_into" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/click_pwr_off"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_power_off"
+                android:gravity="center|left"
+                android:text="@string/pwr_off" />
+
+            <Button
+                android:id="@+id/click_pwr_reboot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_replay"
+                android:gravity="center|left"
+                android:text="@string/pwr_reboot" />
+
+            <Button
+                android:id="@+id/click_pwr_reboot_quick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_replay"
+                android:gravity="center|left"
+                android:text="@string/pwr_reboot_quick" />
+
+            <Button
+                android:id="@+id/click_pwr_recovery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_refresh"
+                android:gravity="center|left"
+                android:text="@string/pwr_recovery" />
+
+            <Button
+                android:id="@+id/click_pwr_bootloader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_refresh"
+                android:gravity="center|left"
+                android:text="@string/pwr_bootloader" />
+
+            <Button
+                android:id="@+id/click_pwr_flash"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_refresh"
+                android:gravity="center|left"
+                android:text="@string/pwr_flash" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

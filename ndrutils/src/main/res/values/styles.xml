@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:buttonStyle">@style/AppTheme.Button</item>
+        <item name="android:radioButtonStyle">@style/AppTheme.RadioButton</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffcacaca</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/darkbutton</item>
+        <item name="android:paddingRight">2dip</item>
+        <item name="android:paddingLeft">2dip</item>
+    </style>
+
+    <style name="AppTheme.RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/darkradiobutton</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="android:Widget.ActionBar">
+        <item name="android:background">@drawable/ab_background</item>
+    </style>
+</resources>

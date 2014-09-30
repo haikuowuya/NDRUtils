@@ -1,0 +1,35 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 20
+        versionCode 12
+        versionName "2.0.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file($/C:\Users\Mark\Documents\AndroidStudioProjects\app_store_keys.jks/$)
+            keyPassword 'K4f4x9c7hx'
+            keyAlias 'ndrutils'
+            storePassword 'K4f4x9c7hx'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            zipAlign true
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            debuggable false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':libsuperuser')
+}

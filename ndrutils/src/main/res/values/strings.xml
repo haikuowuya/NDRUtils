@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NDR Utils</string>
+    <!-- Power Options Screen -->
+    <string name="recovery_intro">Choose Primary Recovery</string>
+    <string name="recovery_missing_intro">Recovery Selection</string>
+    <string name="recovery_philz">Philz Touch Recovery</string>
+    <string name="recovery_twrp">TeamWin Recovery Project</string>
+    <string name="recovery_cwm">ClockWorkMod</string>
+    <string name="pwr_into">Power Menu</string>
+    <string name="pwr_off">Power Off device</string>
+    <string name="pwr_reboot">Reboot device</string>
+    <string name="pwr_bootloader">Reboot to Fastboot</string>
+    <string name="pwr_recovery">Reboot to Primary Recovery</string>
+    <string name="pwr_flash">Reboot to Flashmode</string>
+    <string name="pwr_reboot_quick">Quick Reboot</string>
+    <!-- Power options Alert Messages -->
+    <string name="pwr_message_failed_read_prop">\nUnable to read XZDR.prop\n\n[NUT]\'s XZDualRecovery is required for this feature</string>
+    <string name="pwr_message_shutdown">Power Off.\n\nYour device will shutdown.</string>
+    <string name="pwr_message_reboot">Reboot.\n\nYour device will reboot.</string>
+    <string name="pwr_message_reboot_fast">Reboot.\n\nYour device will quick reboot.</string>
+    <string name="pwr_message_recovery">Reboot.\n\nYour device will reboot to recovery.</string>
+    <string name="pwr_message_flash">Reboot.\n\nYour device will reboot to flash mode.</string>
+    <string name="pwr_message_bootloader">Reboot.\n\nYour device will reboot to bootloader.</string>
+    <!-- Root Strings -->
+    <string name="root_failed">Failed to get root access.\n\nMake sure your device is rooted properly and you have not blocked shell commands.</string>
+
+</resources>
